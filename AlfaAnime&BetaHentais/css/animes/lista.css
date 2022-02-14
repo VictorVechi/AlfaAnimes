@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #fff;
+    display: inline-block;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    padding: 40px;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(45deg, #5EB2F7, #5279D9, #6769F0, #7352D9, #B05EF7);
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+
+.tabela tr, .tabela td:not(.vazio) {
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px;
+    border: 3px outset #fff;
+}
+
+.update {
+    left: 10px;
+}
+.botao,
+.update {
+    position: relative;
+    display: inline-flex;
+    width: 120px;
+    height: 45px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+    background: transparent;
+    border: transparent;
+}
+
+.cadastro, .logout, .hentai {
+    position: relative;
+    display: inline-flex;
+    width: 120px;
+    height: 45px;
+}
+
+.cadastro a, .hentai a, .logout a {
+    font-size: 12px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+}
+
+.cadastro a::before,
+.cadastro a::after,
+.logout a::before,
+.logout a::after,
+.hentai a::before,
+.hentai a::after,
+.botao::before,
+.botao::after,
+.update::before,
+.update::after {
+    height: 45px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.cadastro a::before {
+    position: absolute;
+    content: "CADASTRO";
+    color: #fff;
+    background: #000;
+    transform: rotateY(0deg) translateZ(25px);
+}
+
+.cadastro a::after {
+    position: absolute;
+    content: "SENPAI";
+    font-weight: bold;
+    color: #000;
+    transform: rotateX(90deg) translateZ(25px);
+    border: 2px solid white;
+    background: #fff;
+}
+
+.logout a::before {
+    position: absolute;
+    content: "LOGOUT";
+    color: #fff;
+    background: #000;
+    transform: rotateY(0deg) translateZ(25px);
+}
+
+.logout a::after {
+    position: absolute;
+    content: "SEE YA SENPAI";
+    font-weight: bold;
+    color: #000;
+    transform: rotateX(90deg) translateZ(25px);
+    border: 2px solid white;
+    background: #fff;
+}
+
+.hentai a::before {
+    position: absolute;
+    content: "LISTA HENTAIS";
+    color: #fff;
+    background: #000;
+    transform: rotateY(0deg) translateZ(25px);
+}
+
+.hentai a::after {
+    position: absolute;
+    content: "SAFADO";
+    font-weight: bold;
+    color: #000;
+    transform: rotateX(90deg) translateZ(25px);
+    border: 2px solid white;
+    background: #fff;
+}
+
+.botao::before {
+    position: absolute;
+    content: "DELETAR";
+    color: #fff;
+    background: #000;
+    transform: rotateY(0deg) translateZ(25px);
+}
+
+.botao::after {
+    position: absolute;
+    content: "BAKA >.<";
+    font-weight: bold;
+    color: #000;
+    transform: rotateX(90deg) translateZ(25px);
+    border: 2px solid white;
+    background: #fff;
+}
+
+.update::before {
+    position: absolute;
+    content: "ATUALIZAR";
+    color: #fff;
+    background: #000;
+    transform: rotateY(0deg) translateZ(25px);
+}
+
+.update::after {
+    position: absolute;
+    content: "NEE-CHAN";
+    font-weight: bold;
+    color: #000;
+    transform: rotateX(90deg) translateZ(25px);
+    border: 2px solid white;
+    background: #fff;
+}
+
+.cadastro a:hover,
+.botao:hover,
+.update:hover,
+.hentai a:hover,
+.logout a:hover {
+    transform: translateZ(-25px) rotateX(-90deg);
+}
+
+footer {
+    position: absolute;
+    left: 45%;
+    bottom: 1%;
+    color: transparent;
+    background-image: radial-gradient( #5EB2F7, #5279D9, #6769F0, #7352D9, #B05EF7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(45deg, #5EB2F7, #5279D9, #6769F0, #7352D9, #B05EF7);
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+    background:  #5EB2F7;
+    border-radius: 50px;
+}

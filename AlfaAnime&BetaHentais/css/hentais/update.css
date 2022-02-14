@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #fff;
+    display: inline-block;
+}
+
+.register-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(80deg, #F24469,  #C41943, #CF6F8A, #AB5370, #8C4661);
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+
+.row{
+    text-align: center;
+    margin-top: -100px;
+}
+
+.register-box img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+}
+
+.register-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #0e153a;
+    text-align: center}
+
+.register-box .anime-box {
+    position: relative;
+}
+
+.register-box .anime-box input {
+    width: 100;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.register-box .anime-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.register-box .anime-box input:focus ~ label,
+.register-box .anime-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #0e153a;
+    font-size: 12px;
+}
+
+.atualizar{
+    position: absolute;
+    width: 120px;
+    height: 45px;
+    font-size: 12px;
+    display: flex;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s ;
+    background: transparent;
+    border: transparent;
+}
+
+span{
+    position: relative;
+    display: inline-flex;
+    width: 120px;
+    height: 45px;
+    left: 32.5%;
+}
+
+.cadastro {
+    position: relative;
+    display: inline-flex;
+    width: 120px;
+    height: 45px;
+    left: 30%;
+}
+
+span a,
+.cadastro a {
+    font-size: 12px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s ;
+}
+
+.atualizar {
+    left: 5%;
+    bottom: 12%;
+}
+
+.atualizar::before,
+.atualizar::after,
+span a::before,
+span a::after,
+.cadastro a::before,
+.cadastro a::after {
+    height: 45px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.atualizar::before {
+    position: absolute;
+    content: "ATUALIZAR";
+    color: #fff;
+    background: #000;
+    transform: rotateY(0deg) translateZ(25px);
+}
+
+.atualizar::after {
+    position: absolute;
+    content: "ARA ARA";
+    font-weight: bold;
+    color: #000;
+    transform: rotateX(90deg) translateZ(25px);
+    border: 2px solid white;
+    background: #fff;
+}
+
+span a::before {
+    position: absolute;
+    content: "LISTAR";
+    color: #fff;
+    background: #000;
+    transform: rotateY(0deg) translateZ(25px);
+}
+
+span a::after {
+    position: absolute;
+    content: "UwU";
+    font-weight: bold;
+    color: #000;
+    transform: rotateX(90deg) translateZ(25px);
+    border: 2px solid white;
+    background: #fff;
+}
+
+.cadastro a::before {
+    position: absolute;
+    content: "CADASTRO";
+    color: #fff;
+    background: #000;
+    transform: rotateY(0deg) translateZ(25px);
+}
+
+.cadastro a::after {
+    position: absolute;
+    content: "YAMETE ANN";
+    font-weight: bold;
+    color: #000;
+    transform: rotateX(90deg) translateZ(25px);
+    border: 2px solid white;
+    background: #fff;
+}
+
+.atualizar:hover,
+span a:hover,
+.cadastro a:hover {
+    transform: translateZ(-25px) rotateX(-90deg);
+}
+
+footer {
+    position: absolute;
+    left: 45%;
+    bottom: 1%;
+    color: transparent;
+    background-image: radial-gradient( #F24469,  #C41943, #CF6F8A, #AB5370, #8C4661);
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(80deg, #F24469,  #C41943, #CF6F8A, #AB5370, #8C4661);
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+    background:  #C41943;
+    border-radius: 50px;
+}
